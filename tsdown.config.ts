@@ -7,6 +7,7 @@ export default defineConfig({
     'src/**/*.{ts,tsx}',
     '!src/**/*.test.{ts,tsx}',
     '!src/**/*.d.{ts,tsx}',
+    '!src/stories',
   ],
   format: ['esm', 'cjs'],
   dts: true,
