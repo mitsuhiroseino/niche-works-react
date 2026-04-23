@@ -8,6 +8,7 @@
     "build-storybook": "storybook build",
     "dev": "vite",
     "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json}\"",
+    "indexes": "tsx ./scripts/indexes.ts",
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
