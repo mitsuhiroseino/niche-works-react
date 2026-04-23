@@ -1,5 +1,5 @@
-import { Config } from 'prettier';
-import base from './prettier.config';
+import type { Config } from 'prettier';
+import base from './prettier.config.ts';
 
 const config: Config = {
   ...base,
