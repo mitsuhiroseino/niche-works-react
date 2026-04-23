@@ -1,2 +1,2 @@
-# niche-works-react
+# @niche-works/react
 A niche library for react.
