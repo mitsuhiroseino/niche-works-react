@@ -11,7 +11,7 @@ import { createElement } from 'react';
 export default function createReactElement(
   type: ElementType,
   props: any,
-  key?: Key,
+  _key?: Key,
 ) {
   return createElement(type, props);
 }

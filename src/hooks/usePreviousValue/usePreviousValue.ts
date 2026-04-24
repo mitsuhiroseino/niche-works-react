@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import type { UsePreviousValueOptions } from './types';
 
 /**
@@ -9,13 +9,21 @@ import type { UsePreviousValueOptions } from './types';
  */
 export default function usePreviousValue<T = any>(
   value: T,
-  options: UsePreviousValueOptions = {},
-): T {
-  const { initialValue, prevOnChange } = options;
-  const prevValueRef = useRef<T>(initialValue);
-  const prevValue = prevValueRef.current;
-  if (!prevOnChange || prevValue !== value) {
-    prevValueRef.current = value;
-  }
+  options: UsePreviousValueOptions<T> = {},
+): T | undefined {
+  const [prevValue, setPrevValue] = useState(options.initialValue);
+  const isEqualRef = useRef(options.isEqual);
+
+  useEffect(() => {
+    isEqualRef.current =
+      options.isEqual ?? ((oldValue, newValue) => oldValue === newValue);
+  });
+
+  useEffect(() => {
+    if (!isEqualRef.current(prevValue, value)) {
+      setPrevValue(value);
+    }
+  }, [value]);
+
   return prevValue;
 }

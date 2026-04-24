@@ -1,15 +1,16 @@
-export type UsePreviousValueOptions<V = any> = {
+export type UsePreviousValueOptions<T = any> = {
   /**
    * 初期値
    */
-  initialValue?: V;
+  initialValue?: T;
 
   /**
-   * 変更される前の値を返す
-   * デフォルトはfalse
-   *
-   * - `true`: 変更される前の値を返す
-   * - `false`: 前回render時の値を返す
+   * 値の比較関数
+   * falseの場合に値を更新する
+   * 未指定の場合は`===`で比較
+   * @param oldValue
+   * @param newValue
+   * @returns
    */
-  prevOnChange?: boolean;
+  isEqual?: (oldValue: T | undefined, newValue: T) => boolean;
 };

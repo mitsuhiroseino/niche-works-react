@@ -1,4 +1,4 @@
-/// <reference types="vitest/config" />
+/// <reference types="vitest/globals" />
 
 declare module '*.css' {
   const content: { [className: string]: string };

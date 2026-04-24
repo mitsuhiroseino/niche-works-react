@@ -7,7 +7,6 @@ export default defineConfig({
     'src/**/*.{ts,tsx}',
     '!src/**/*.test.{ts,tsx}',
     '!src/**/*.d.{ts,tsx}',
-    '!src/stories',
   ],
   format: ['esm', 'cjs'],
   dts: true,
@@ -48,10 +47,6 @@ export default defineConfig({
           './types': {
             import: './types.mjs',
             require: './types.cjs',
-          },
-          './*/types': {
-            import: './*/types.mjs',
-            require: './*/types.cjs',
           },
         },
       },
