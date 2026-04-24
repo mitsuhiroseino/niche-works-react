@@ -2,7 +2,15 @@
   "name": "react",
   "version": "0.1.0",
   "private": true,
-  "type": "module",
+  "keywords": [
+    "react"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mitsuhiroseino/niche-works-react.git"
+  },
+  "license": "MIT",
+  "author": "Mitsuhiro Seino",
   "scripts": {
     "build": "tsdown",
     "build-storybook": "storybook build",
