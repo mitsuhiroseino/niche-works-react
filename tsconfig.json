@@ -3,7 +3,7 @@
     "target": "es2023",
     "lib": ["ES2023", "DOM"],
     "module": "esnext",
-    "types": ["vite/client"],
+    "types": ["node"],
     "skipLibCheck": true,
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -35,6 +35,5 @@
     "strictPropertyInitialization": false,
     "preserveSymlinks": false
   },
-  "include": ["src", "globals.d.ts"],
-  "exclude": ["stories"]
+  "include": ["src", "globals.d.ts"]
 }
