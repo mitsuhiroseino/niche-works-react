@@ -1,6 +1,6 @@
 {
   "name": "@niche-works/react",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "keywords": [
     "react"
@@ -52,6 +52,7 @@
     "prettier-plugin-packagejson": "^3.0.2",
     "react": "^17.0.0 ",
     "react-dom": "^17.0.0 ",
+    "rollup-plugin-copy": "^3.5.0",
     "storybook": "^10.3.5",
     "tsdown": "^0.21.9",
     "tsx": "^4.21.0",
