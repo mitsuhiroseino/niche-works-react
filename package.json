@@ -1,6 +1,6 @@
 {
   "name": "@niche-works/react",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "keywords": [
     "react"
@@ -19,6 +19,10 @@
     "lint": "eslint .",
     "storybook": "storybook dev -p 6006",
     "tidy": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json}\" --config ./prettier.tidy.config.ts"
+  },
+  "dependencies": {
+    "@niche-works/types": "^0.3.1",
+    "@niche-works/utils": "^0.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.29.0",

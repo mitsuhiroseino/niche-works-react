@@ -7,6 +7,13 @@ settings:
 importers:
 
   .:
+    dependencies:
+      '@niche-works/types':
+        specifier: ^0.3.1
+        version: 0.3.1
+      '@niche-works/utils':
+        specifier: ^0.4.0
+        version: 0.4.0
     devDependencies:
       '@babel/core':
         specifier: ^7.29.0
@@ -500,6 +507,9 @@ packages:
   '@neoconfetti/react@1.0.0':
     resolution: {integrity: sha512-klcSooChXXOzIm+SE5IISIAn3bYzYfPjbX7D7HoqZL84oAfgREeSg5vSIaSFH+DaGzzvImTyWe1OyrJ67vik4A==}
 
+  '@niche-works/constants@0.1.2':
+    resolution: {integrity: sha512-Ku0oteVKNkf7EiaU1FoYYiMp0h0lgVotESVG6ahgttPmp8JBoWlrbGJflAgK/7sG+QIu3KPZu8w2uTCyIJjmOQ==}
+
   '@niche-works/dev@0.5.1':
     resolution: {integrity: sha512-GKYLhrQgWfxbRNF3gT/N3HRZpEPhu5M0POKmv3Ccb6qcDdswZwwTgl+K6k2crrZb9RYi/xC/G00C3ha6XCEdZA==}
 
@@ -507,6 +517,12 @@ packages:
     resolution: {integrity: sha512-QvoZn8NY5gTvsVlnWUQHxGoam9xPRmgQQmT/KNquEIblap5mXkMKz/lrzLWidUTMYoG6RmxB/IYoDxZrAO0x+w==}
     peerDependencies:
       rollup: ^4.0.0
+
+  '@niche-works/types@0.3.1':
+    resolution: {integrity: sha512-nzUQeSr4wsgdEAfBJR3ix70Vup74nrd/uTr0R1NxKVx4d3fjm/bDb2iyZwPU0IDHzRPglnV3ev2hTi3U7wSUjw==}
+
+  '@niche-works/utils@0.4.0':
+    resolution: {integrity: sha512-cJU/Yk+vzRGxFfxYupFJLu2khLwU1j6xgNvbMJ4Dt0WtkwtfaUBKrxFG7/CEzoWTewCWOf3wLEjHUJtSxN8mJw==}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -1267,6 +1283,9 @@ packages:
     engines: {node: '>=6.0.0'}
     hasBin: true
 
+  big.js@6.2.2:
+    resolution: {integrity: sha512-y/ie+Faknx7sZA5MfGA2xKlu0GDv8RWrXGsmlteyJQ2lvoKv9GBK/fpRMc2qlSoBAgNxrixICFCBefIq8WCQpQ==}
+
   birpc@4.0.0:
     resolution: {integrity: sha512-LShSxJP0KTmd101b6DRyGBj57LZxSDYWKitQNW/mi8GRMvZb078Uf9+pveax1DrVL89vm7mWe+TovdI/UDOuPw==}
 
@@ -1760,6 +1779,10 @@ packages:
 
   keyv@4.5.4:
     resolution: {integrity: sha512-oxVHkHR/EJf2CNXnWxRLW6mg7JyCCUcG0DtEGmL2ctUo1PNTin1PUil+r/+4r5MpVgC/fn1kjsx7mjSujKqIpw==}
+
+  klona@2.0.6:
+    resolution: {integrity: sha512-dhG34DXATL5hSxJbIexCft8FChFXtmskoZYnoPWjXQuebWYCNkVeV3KkGegCK9CP1oswI/vQibS2GY7Em/sJJA==}
+    engines: {node: '>= 8'}
 
   levn@0.4.1:
     resolution: {integrity: sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==}
@@ -2843,6 +2866,8 @@ snapshots:
 
   '@neoconfetti/react@1.0.0': {}
 
+  '@niche-works/constants@0.1.2': {}
+
   '@niche-works/dev@0.5.1':
     dependencies:
       fast-glob: 3.3.3
@@ -2858,6 +2883,18 @@ snapshots:
       rollup: 4.60.2
       sort-package-json: 3.6.1
       tslib: 2.8.1
+
+  '@niche-works/types@0.3.1':
+    dependencies:
+      type-fest: 5.6.0
+
+  '@niche-works/utils@0.4.0':
+    dependencies:
+      '@niche-works/constants': 0.1.2
+      '@niche-works/types': 0.3.1
+      big.js: 6.2.2
+      klona: 2.0.6
+      remeda: 2.33.7
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
@@ -3564,6 +3601,8 @@ snapshots:
 
   baseline-browser-mapping@2.10.21: {}
 
+  big.js@6.2.2: {}
+
   birpc@4.0.0: {}
 
   brace-expansion@1.1.14:
@@ -4024,6 +4063,8 @@ snapshots:
   keyv@4.5.4:
     dependencies:
       json-buffer: 3.0.1
+
+  klona@2.0.6: {}
 
   levn@0.4.1:
     dependencies:

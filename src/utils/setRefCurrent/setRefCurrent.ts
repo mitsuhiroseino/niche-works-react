@@ -6,7 +6,7 @@ import type { RefCallback, RefObject } from 'react';
  * @param refs
  * @returns クリーンアップ関数
  */
-export default function setRefCurrent<T = any>(
+export default function setRefCurrent<T = unknown>(
   value: T | null,
   ...refs: (RefCallback<T> | RefObject<T> | null | undefined)[]
 ): () => void {

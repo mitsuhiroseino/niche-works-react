@@ -1,6 +1,6 @@
+import isIterable from '@niche-works/utils/type/isIterable';
 import type { FragmentProps, ReactNode } from 'react';
 import { Children, Fragment, isValidElement } from 'react';
-import _isIterable from './_isIterable';
 
 /**
  * React.Fragmentを透過し、children内のReactElement、string、numberを処理する
@@ -26,7 +26,7 @@ export default function _traverseContent<N, T>(
       }
     } else if (typeof child === 'string' || typeof child === 'number') {
       collect(callback(child as N, index));
-    } else if (_isIterable(child)) {
+    } else if (isIterable(child)) {
       _traverseContent(child, callback, collect);
     }
   });
